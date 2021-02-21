@@ -10,15 +10,18 @@ public class Nav extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nav);
 
-        Singleton creador = new Singleton();
-        Singleton replica = new Singleton();
+        Singleton creador = Singleton.getInstanciaSingleton();
 
         Singleton instanciaA = creador.getInstanciaSingleton();
         Singleton instanciaB = creador.getInstanciaSingleton();
-        Singleton instanciaC = replica.getInstanciaSingleton();
 
         System.out.println(">> instanciaA :: hashCode [" + instanciaA.hashCode() + "] " + instanciaA.getRandonNumber());
         System.out.println(">> instanciaB :: hashCode [" + instanciaB.hashCode() + "] " + instanciaB.getRandonNumber());
-        System.out.println(">> instanciaC :: hashCode [" + instanciaC.hashCode() + "] " + instanciaC.getRandonNumber());
+
+        /**
+         * Resultado en consola de [logCat]
+         * 02-21 11:13:35.639 4322-4322/com.example.singleton I/System.out: >> instanciaA :: hashCode [174882699] 17
+         * 02-21 11:13:35.639 4322-4322/com.example.singleton I/System.out: >> instanciaB :: hashCode [174882699] 17
+         */
     }
 }
