@@ -1,5 +1,5 @@
 # android-java
 Paso a paso con Android :D
 
-- Patrones de dise‚ñ°o
+- Patrones de dise√o
 - Componentes
