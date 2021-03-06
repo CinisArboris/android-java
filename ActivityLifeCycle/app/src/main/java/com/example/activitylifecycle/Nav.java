@@ -4,7 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class Nav extends AppCompatActivity {
-    private String flag = ">>";/*Filtro para logcat [info] para mejor visualización*/
+    /*Filtro para logcat [info] para mejor visualización*/
+    private String flag = ">>";
 
     public String getFlag() {
         return flag;
