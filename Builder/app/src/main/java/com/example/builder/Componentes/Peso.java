@@ -1,10 +1,16 @@
 package com.example.builder.Componentes;
 
 public enum Peso {
-    LIVIANO(13.5), NORMAL(14.1), PESADO(20.1);
-    private final double peso;
+    M200(29),
+    M300(55),
+    HB50(15),
+    MXIX_5000K(18),
+    SAPP(15);
 
-    Peso(double peso) {
-        this.peso = peso;
+    public final double masa;
+    private final double libras_to_kilogramo = 2.20462;
+
+    Peso(double masa) {
+        this.masa = masa * this.libras_to_kilogramo;
     }
 }
