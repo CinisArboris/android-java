@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.othala.Cliente.dummy.DummyContent.DummyItem;
+import com.example.othala.R;
 
 import java.util.List;
 
